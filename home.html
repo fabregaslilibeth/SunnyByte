@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="carousel.css">
+
+    <title>Document</title>
+</head>
+
+<body class="w-full text-gray-600">
+
+    <nav class="nav h-20 flex justify-between items-center px-4 md:px-20 text-white">
+        <div class="text-xl font-extrabold cursive text-3xl md:text-5xl">Mairala</div>
+
+        <div class="hidden md:flex space-x-4">
+            <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">HOME</div>
+            <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">ABOUT</div>
+            <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">PORTFOLIOS</div>
+            <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">TEAM</div>
+            <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">BLOG</div>
+            <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">CONTACT</div>
+        </div>
+
+        <div class="md:hidden group relative z-50 group-hover:h-96">
+           <p class="cursor-pointer"><i class="fa-solid fa-bars"></i></p>
+            <div class="invisible group-hover:visible absolute top-4 z-50 right-0 bg-gray-900 px-6 py-3 space-y-2">
+                <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">HOME</div>
+                <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">ABOUT</div>
+                <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">PORTFOLIOS</div>
+                <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">TEAM</div>
+                <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">BLOG</div>
+                <div class="font-semibold hover:text-red-300 cursor-pointer duration-300">CONTACT</div>
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <main class="main">
+        <!-- Start of banner small -->
+        <div class="md:hidden h-96 w-full" style="background: url('https://cdn.pixabay.com/photo/2015/02/17/15/13/tea-light-639489_960_720.jpg') center center no-repeat">
+            <div class="text-white flex items-center p-20">
+              <div>
+                <div class="uppercase">
+                    Grab your copy of
+                </div>
+                <div class="uppercase text-3xl font-semibold">
+                    The <span class="text-accent">premium</span> quality <br> psd template for <span
+                        class="text-accent">free</span>
+                </div>
+
+                <button class="bg-custom-gray px-8 py-2 mt-8 text-xs uppercase">Download <span><i
+                            class="fa-solid fa-download"></i></span></button>
+              </div>
+            </div>
+        </div>
+        <!-- End of banner small -->
+
+        <!-- Start of banner medium-->
+        <div class="relative hidden md:block">
+            <div class="text-white absolute z-50 top-1/2 left-1/4 transform -translate-y-1/2 -translate-x-1/2">
+                <div class="uppercase">
+                    Grab your copy of
+                </div>
+                <div class="uppercase text-5xl font-semibold">
+                    The <span class="text-accent">premium</span> quality <br> psd template for <span
+                        class="text-accent">free</span>
+                </div>
+
+                <button class="bg-custom-gray px-8 py-2 mt-8 text-xs uppercase">Download <span><i
+                            class="fa-solid fa-download"></i></span></button>
+            </div>
+
+            <div class="carousel">
+                <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="https://cdn.pixabay.com/photo/2015/03/27/13/16/maine-coon-694730_960_720.jpg">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="https://cdn.pixabay.com/photo/2015/04/23/21/59/tree-736877_960_720.jpg">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="https://cdn.pixabay.com/photo/2017/09/18/15/38/moon-2762111_960_720.jpg">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- End of banner medium-->
+
+        <!-- Start of services -->
+        <div class="my-8 mx-4 md:mx-20">
+
+            <div class="text-center text-accent uppercase font-semibold text-2xl">
+                Services we provide
+            </div>
+
+            <div class="w-full md:w-1/2 mx-auto text-center mt-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloribus praesentium iusto
+                    provident ut, commodi quaerat officiis perferendis deserunt ipsa molestias voluptatem rem expedita
+                    architecto itaque eligendi aspernatur iste, autem nobis nam beatae asperiores, blanditiis rerum.</p>
+            </div>
+
+            <div class="grid grid-cols-3 text-center py-20">
+                <div class="col-span-3 md:col-span-1">
+                    <div>
+                        <p><i class="fa-solid fa-users text-2xl text-accent"></i></p>
+                        <p class="uppercase font-semibold">Consultancy</p>
+                        <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae esse doloribus
+                            sunt.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-3 md:col-span-1">
+                    <div>
+                        <p><i class="fa-solid fa-bullhorn text-2xl text-accent"></i></p>
+                        <p class="uppercase font-semibold">Marketing</p>
+                        <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae esse doloribus
+                            sunt.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-3 md:col-span-1">
+                    <div>
+                        <p><i class="fa-solid fa-flask text-2xl text-accent"></i></p>
+                        <p class="uppercase font-semibold">Research</p>
+                        <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae esse doloribus
+                            sunt.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of services -->
+
+        <!-- Start of blog -->
+        <div class="my-20 mx-4 md:mx-32">
+
+            <div class="text-center text-accent uppercase font-semibold text-4xl">
+                Our Blog
+            </div>
+
+            <div class="w-full md:w-1/2 mx-auto text-center mt-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+
+            <div class="flex w-full flex-wrap mt-20">
+                <div class="w-full md:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2015/06/24/13/32/camera-820018_960_720.jpg" alt=""
+                        class="md:w-1/2 md:ml-auto">
+                </div>
+
+                <div class="w-full md:w-1/2 md:pl-12">
+                    <p class="text-accent text-md">10 April 2018</p>
+                    <p class="font-semibold text-2xl">Typi non habent claritatem insitam</p>
+
+                    <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, a facere
+                        expedita quisquam eos illo commodi quia aperiam facilis sed fuga hic ut vel odio unde? Nostrum
+                        veniam accusamus facilis!</p>
+                </div>
+            </div>
+
+            <div class="flex w-full flex-wrap mt-20">
+                <div class="w-full md:w-1/2 md:order-2">
+                    <img src="https://cdn.pixabay.com/photo/2015/06/24/13/32/camera-820018_960_720.jpg" alt=""
+                        class="md:w-1/2 md:mr-auto">
+                </div>
+
+                <div class="w-full md:w-1/2 md:pr-12 md:text-right">
+                    <p class="text-accent text-md">10 April 2018</p>
+                    <p class="font-semibold text-2xl">Typi non habent claritatem insitam</p>
+
+                    <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, a facere
+                        expedita quisquam eos illo commodi quia aperiam facilis sed fuga hic ut vel odio unde? Nostrum
+                        veniam accusamus facilis!</p>
+                </div>
+            </div>
+
+            <div class="flex w-full flex-wrap mt-20">
+                <div class="w-full md:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2015/06/24/13/32/camera-820018_960_720.jpg" alt=""
+                        class="md:w-1/2 md:ml-auto">
+                </div>
+
+                <div class="w-full md:w-1/2 md:pl-12">
+                    <p class="text-accent text-md">10 April 2018</p>
+                    <p class="font-semibold text-2xl">Typi non habent claritatem insitam</p>
+
+                    <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, a facere
+                        expedita quisquam eos illo commodi quia aperiam facilis sed fuga hic ut vel odio unde? Nostrum
+                        veniam accusamus facilis!</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of blog -->
+
+        <!-- Start of contact -->
+        <div class="bg-gray-50 p-6 md:p-20">
+            <p class="uppercase text-accent font-semibold text-3xl text-center py-20">Contact</p>
+
+            <div class="w-full md:w-1/2 mx-auto">
+                <div class="w-full flex flex-wrap justify-center">
+                    <div class="w-6/12">
+                        <div class="border-t-4 border-gray-800 mr-2">Name*</div>
+                    </div>
+
+                    <div class="w-6/12">
+                        <div class="border-t-4 border-gray-800 ml-2">Email</div>
+                    </div>
+                </div>
+
+                <div class="mx-auto border-t-4 border-gray-800 mt-12">Message..</div>
+
+                <hr class="border-t-1 border-gray-800 mt-32">
+            </div>
+
+            <div class="flex justify-center">
+                <button
+                    class="border-2 border-black px-8 py-2 mt-8 uppercase hover:bg-gray-500 hover:text-white duration-300">Submit</button>
+            </div>
+        </div>
+        </div>
+        <!-- End of contact -->
+
+
+        <!-- Start of footer -->
+        <div class="grid grid-cols-4 gap-6 py-20 bg-gray-800 px-20 text-left">
+            <div class="col-span-4 md:col-span-1">
+                <div>
+                    <p class="text-accent cursive text-2xl">Mairala</p>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt reiciendis
+                        cumque sunt deleniti tenetur blanditiis aut similique adipisci facere alias, quod praesentium
+                        accusantium beatae incidunt molestiae minima autem harum in officiis! Corporis, tempore
+                        consectetur iure quae numquam est excepturi omnis reiciendis nesciunt fugit optio dolores
+                        quisquam doloremque modi enim!</p>
+                </div>
+            </div>
+
+            <div class="col-span-4 md:col-span-1">
+                <div>
+                    <p class="uppercase font-semibold">Recent Posts</p>
+                    
+                    <div class="border-b border-gray-600 py-4">
+                        <p class="text-gray-700">10 April 2018</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="border-b border-gray-600 py-4">
+                        <p class="text-gray-700">10 April 2018</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="border-b border-gray-600 py-4">
+                        <p class="text-gray-700">10 April 2018</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-4 md:col-span-1">
+                <div>
+                    <p class="uppercase font-semibold">Twitter Feeds</p>
+                    
+                    <div class="border-b border-gray-600 py-4">
+                        <p>@kristianplatt <span class="text-gray-700 text-xs">2 days ago</span></p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="border-b border-gray-600 py-4">
+                        <p>@kristianplatt <span class="text-gray-700 text-xs">2 days ago</span></p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="border-b border-gray-600 py-4">
+                        <p>@kristianplatt <span class="text-gray-700 text-xs">2 days ago</span></p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-4 md:col-span-1">
+                <div>
+                    <p class="uppercase font-semibold">Our Address</p>
+                    
+                    <p class="pb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt reiciendis
+                        cumque sunt deleniti tenetur blanditiis aut similique adipisci facere alias, quod praesentium
+                        accusantium beatae incidunt molestiae minima autem harum in officiis! Corporis, tempore
+                        consectetur iure quae numquam est excepturi omnis reiciendis nesciunt fugit optio dolores
+                        quisquam doloremque modi enim!</p>
+
+                        <p><i class="fa-solid fa-location-dot"></i> Moonshine St. 14/05 Light Jupiter</p>
+                        <p><i class="fa-solid fa-phone"></i> +00 (123) 456 78 90</p>
+                        <p><i class="fa-solid fa-envelope"></i> first.last@email.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-gray-900 text-center py-2">
+            &copy; 2014 Imram Khan All Rights Reserved
+        </div>
+        <!-- End of footer -->
+    </main>
+
+
+</body>
+
+</html>
